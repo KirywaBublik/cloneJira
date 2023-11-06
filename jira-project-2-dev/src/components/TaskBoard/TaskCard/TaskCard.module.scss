@@ -1,0 +1,82 @@
+@import "@assets/styles/Variables.scss";
+@import "@assets/styles/Mixins.scss";
+
+.taskCard {
+  z-index: 3;
+  padding: 20px 9px 9px 20px;
+  border-radius: 15px;
+  border: 1px solid $main;
+  background: $back;
+  box-shadow: 0 4px 5px 3px rgba(31, 38, 135, 0.25);
+  width: 220px;
+  min-height: 120px;
+  position: relative;
+
+  &__titleBlock {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-top: 3px;
+    color: $text;
+    @include p1;
+    max-width: 120px;
+  }
+
+  &__avatarContainer {
+    position: relative;
+  }
+
+  &__plusIconContainer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  &__modalUser {
+    position: absolute;
+    border-radius: 5px;
+    background: rgba(31, 31, 71, 0.90);
+    filter: drop-shadow(0 0 4px rgba(113, 170, 235, 0.50));
+    padding: 3px 5px;
+    transform: translate(50%, 100%);
+    bottom: 0;
+    right: 50%;
+    z-index: 1;
+
+    span {
+      color: $text;
+      @include p2;
+      font-size: 10px;
+      white-space: nowrap;
+    }
+  }
+
+  &__progressBlock {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 12px;
+    bottom: 14px;
+  }
+
+  &__progressModal {
+    border-radius: 5px;
+    background: rgba(31, 31, 71, 0.90);
+    filter: drop-shadow(0px 0px 4px rgba(113, 170, 235, 0.50));
+    position: absolute;
+    padding: 2px 9px;
+    transform: translate(50%, 100%);
+    bottom: -3px;
+    right: 50%;
+    z-index: 1;
+  }
+
+  &__modalProgress {
+    @include p2;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+}

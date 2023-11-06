@@ -1,0 +1,64 @@
+@import "./../../assets/styles/Variables";
+@import "./../../assets/styles/Mixins";
+
+.buttonBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.textBlock {
+  max-width: 353px;
+  margin: 0 auto;
+
+  p {
+    padding-top: 270px;
+    padding-bottom: 200px;
+    color: $text;
+    @include h2;
+  }
+}
+
+.confBlock {
+  padding-top: 45px;
+  max-width: 350px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+
+  .confText {
+    color: #ADADAD;
+    @include p2;
+  }
+}
+
+.closeModalButton {
+  position: relative;
+  bottom: 10px;
+  left: 250px;
+}
+
+.modalTitle {
+  margin-top: -30px;
+  color: $text;
+  @include h2;
+}
+
+.modalText {
+  padding-top: 15px;
+  color: $text;
+  @include h4;
+}
+
+.profileModalButtonBlock {
+  padding-bottom: 10px;
+  padding-top: 110px;
+
+  .buttonNext {
+    padding: 12px 32px;
+    color: $text;
+    background: $back;
+    border-radius: 20px;
+    border: 1px solid $text;
+  }
+}
+

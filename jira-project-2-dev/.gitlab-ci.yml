@@ -1,0 +1,12 @@
+stages:
+  - deploy
+  - deploy_prod
+
+deploy:
+  stage: deploy
+  script:
+    - docker rm --force jira-project-front2
+    - docker-compose up --no-deps --remove-orphans --build -d jira-project-front2
+  only:
+    refs:
+      - dev

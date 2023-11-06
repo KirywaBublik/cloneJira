@@ -1,0 +1,50 @@
+@import "./../../assets/styles/Variables";
+@import "./../../assets/styles/Mixins";
+
+.forgotPassBlock {
+  padding-top: 10px;
+  margin-left: 250px;
+
+  .forgotPassLink {
+    color: $text;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+  }
+}
+
+.buttonBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.formClass {
+  padding-bottom: 100px;
+}
+
+.blockHello {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  .helloText {
+    color: $text;
+    @include h2;
+  }
+}
+
+.confBlock {
+  padding-top: 200px;
+  max-width: 350px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+
+  .confText {
+    color: #ADADAD;
+    @include p2;
+  }
+}
+
+.blockButtonAccept {
+  padding-top: 30px;
+}

@@ -1,0 +1,78 @@
+@import "../../../../assets/styles/Variables";
+@import "../../../../assets/styles/Mixins";
+
+
+.errorUserBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 105px;
+  padding-left: 120px;
+
+  .purpleLine {
+    position: absolute;
+    top: 140px;
+    left: 284px;
+    z-index: 1;
+  }
+
+  .percentTopNumber {
+    position: relative;
+    bottom: 170px;
+    right: 20px;
+    color: #5C39F1;
+    @include default(64);
+    line-height: 150%;
+    letter-spacing: 0.64px;
+  }
+
+  .percentBottomNumber {
+    position: relative;
+    top: 270px;
+    left: -75px;
+    color: $text;
+    @include default(64);
+    line-height: 150%;
+    letter-spacing: 0.64px;
+  }
+
+  .whiteLine {
+    position: absolute;
+    top: 472px;
+    right: 290px;
+    z-index: 1;
+  }
+
+  .percentTopText {
+    max-width: 220px;
+    text-align: start;
+    color: $text;
+    @include h5;
+    position: relative;
+    bottom: 180px;
+    right: 110px;
+  }
+
+  .percentBottomText {
+    text-align: start;
+    color: $text;
+    @include h5;
+    max-width: 280px;
+    position: relative;
+    top: 200px;
+    left: 155px;
+  }
+}
+
+.track {
+  fill: none;
+  stroke: $text;
+  stroke-width: 49px;
+}
+
+.progress {
+  stroke-width: 50px;
+  fill: none;
+  stroke: #5C39F1;
+  transform-origin: center;
+}

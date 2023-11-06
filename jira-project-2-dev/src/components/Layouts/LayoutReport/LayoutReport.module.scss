@@ -1,0 +1,23 @@
+@import "./../../../assets/styles/Variables";
+
+.timeCheckBlock {
+  max-width: 1400px;
+  padding: 0 20px 45px 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.timeCheckBlockContent {
+  box-shadow: 0 8px 32px 5px rgba(31, 38, 135, 0.37);
+  background: $back url("./../../../assets/img/Blob.svg") center no-repeat;
+  background-blend-mode: color-dodge;
+
+  .timeCheckBlockContentForBackground {
+    width: 1360px;
+    height: 750px;
+    background: rgba(190, 190, 190, 0.13);
+    backdrop-filter: blur(18px);
+    border-radius: 15px;
+
+  }
+}

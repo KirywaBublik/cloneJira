@@ -1,0 +1,35 @@
+@import "./../../../../assets/styles/Variables";
+@import "./../../../../assets/styles/Mixins";
+
+.labelBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 55px;
+  .labelText{
+    color: rgba(255, 255, 255, 0.50);
+    @include h3;
+  }
+  .inputText {
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 0.50);
+    width: 350px;
+    height: 45px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+    padding-left: 15px;
+    font-size: 14px;
+    z-index: 3;
+
+    &:focus {
+      background: rgba(0, 0, 0, 0.25);
+      color: $text;
+    }
+  }
+  .LinkPass {
+    position: relative;
+    top: 20px;
+    left: 330px;
+  }
+}

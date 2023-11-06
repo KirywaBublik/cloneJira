@@ -1,0 +1,66 @@
+@import "./../../../../assets/styles/Variables";
+@import "./../../../../assets/styles/Mixins";
+
+.blockAllError {
+  padding-top: 112px;
+
+  .CountOfError {
+    color: $text;
+    @include h5;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 90px;
+    right: 615px;
+  }
+
+  .borderAllError {
+    width: 1193px;
+    height: 515px;
+    border-bottom: 4px solid $text;
+    border-left: 4px solid $text;
+    margin: 0 auto;
+
+    .generalBlock {
+      display: flex;
+      padding: 0 10px 0 10px;;
+      gap: 10px;
+
+      .percentDivBlock {
+        background: #5C39F1;;
+        width: 93px;
+        position: absolute;
+        bottom: 104px;
+
+        .percentStyle {
+          color: $text;
+          position: relative;
+          bottom: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include h5;
+        }
+      }
+
+
+      .nameStyle {
+        color: $text;
+        @include h5;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-top: 40px;
+        width: 90px;
+        height: 50px;
+        position: relative;
+        top: 485px;
+      }
+
+      .scroll {
+        position: absolute;
+        background: none;
+        top: 375px;
+        left: 1280px;
+      }
+    }
+  }
+}

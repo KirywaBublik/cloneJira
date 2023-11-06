@@ -1,0 +1,168 @@
+@import "./../../assets/styles/Variables";
+@import "./../../assets/styles/Mixins";
+
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto 30px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .politicBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .headerIcon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 19.5px;
+      padding-top: 4px;
+    }
+  }
+
+  .timeCheckTitle {
+    text-align: start;
+    padding-top: 5px;
+    color: $text;
+    @include h1;
+  }
+
+  .timeCheckLine {
+    background: rgba(255, 255, 255, 0.50);
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    margin-top: 4px;
+    margin-bottom: 55px;
+  }
+
+  .generalBlock {
+    background-blend-mode: color-dodge;
+    background: $back url("./../../assets/img/Blob.svg") center no-repeat;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .grayBlock {
+    width: 650px;
+    border-radius: 15px;
+    background: rgba(190, 190, 190, 0.13);
+    box-shadow: 0 8px 32px 5px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(18px);
+    overflow: hidden;
+
+    .buttonBack {
+      position: relative;
+      top: 0;
+      left: 0;
+
+    }
+
+    .formReport {
+      margin-top: -10px;
+      padding: 0 45px;
+
+      .btnStyles {
+        padding: 30px 0;
+        text-align: center;
+      }
+    }
+
+  }
+}
+
+.grayBlockTwo {
+  width: 650px;
+  border-radius: 15px;
+  background: rgba(190, 190, 190, 0.13);
+  box-shadow: 0 8px 32px 5px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $text;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .informText {
+    padding: 25px 50px;
+    word-wrap: break-word;
+    overflow: auto;
+    color: $text;
+    @include h3;
+  }
+}
+
+.labelText {
+  padding: 10px 0 7px 110px;
+  text-align: start;
+  color: $text;
+  @include p2;
+}
+
+.textAreaStyle {
+  padding: 10px 20px;
+  resize: none;
+  width: 350px;
+  min-height: 250px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: rgba(255, 255, 255, 0.35);
+  color: $text;
+  overflow: auto;
+}
+
+.styleLabel {
+  height: 140px;
+  width: 350px;
+  margin: -3px auto 0 auto;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: rgba(255, 255, 255, 0.35);
+
+}
+
+.spanLabelText {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  height: 23px;
+  position: absolute;
+  top: 630px;
+  right: 245px;
+  color: rgba(255, 255, 255, 0.50);
+  @include p2;
+  background: url("./../../assets/img/clipIcon.svg") left no-repeat;
+  padding-left: 30px;
+}
+
+.imgZamena {
+  cursor: pointer;
+  position: absolute;
+  top: 590px;
+  left: 165px;
+  min-width: 319px;
+  max-width: 319px;
+  min-height: 100px;
+  max-height: 100px;
+}
+
+.blockTextArea {
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+@import "./../../../assets/styles/Variables";
+@import "./../../../assets/styles/Mixins";
+
+.ErrorText {
+  @include h1;
+  color: $text;
+}
+
+.ErrorImg {
+  margin-top: -150px;
+  margin-left: -100px;
+}

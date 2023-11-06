@@ -1,0 +1,73 @@
+@import "@assets/styles/Variables.scss";
+@import "@assets/styles/Mixins.scss";
+
+
+.subtaskCard {
+  border-radius: 15px;
+  border: 1px solid $main;
+  background: #382A8B;
+  box-shadow: 0 4px 5px 3px rgba(31, 38, 135, 0.25);
+  padding: 13px 9px 5px;
+  width: 220px;
+
+  &__titleBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+
+  &__title {
+    color: $text;
+    @include p1;
+    display: inline-block;
+    max-width: 135px;
+  }
+
+  &__contentBlock {
+    border-radius: 15px;
+    border: 1px solid $main;
+    background: $back;
+    box-shadow: 0 4px 5px 3px rgba(31, 38, 135, 0.25);
+    padding: 3px 20px;
+    position: relative;
+  }
+
+  &__avatarContainer {
+    position: relative;
+  }
+
+  &__subtask {
+    display: inline-block;
+    color: $text;
+    @include p1;
+  }
+
+  &__progressBlock {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 9px;
+  }
+
+  &__userModal {
+    position: absolute;
+    border-radius: 5px;
+    background: rgba(31, 31, 71, 0.90);
+    filter: drop-shadow(0px 0px 4px rgba(113, 170, 235, 0.50));
+    padding: 3px 5px;
+    transform: translate(50%, 100%);
+    bottom: 0;
+    right: 50%;
+    z-index: 1;
+
+    span {
+      color: $text;
+      @include p2;
+      font-size: 10px;
+      white-space: nowrap;
+    }
+  }
+}

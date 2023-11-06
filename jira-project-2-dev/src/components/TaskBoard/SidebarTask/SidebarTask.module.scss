@@ -1,0 +1,75 @@
+@import "@assets/styles/Mixins.scss";
+@import "@assets/styles/Variables.scss";
+
+.sidebarTask {
+  &__taskCardContainer {
+    position: relative;
+  }
+
+  &__subtasksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: height ease 0.3s;
+  }
+
+  &__subtasksBlock {
+    border-radius: 0 0 15px 15px;
+    background: #382A8B;
+    box-shadow: 0 4px 5px 3px rgba(31, 38, 135, 0.25);
+    width: 210px;
+    padding: 0 4px 14px;
+  }
+
+  &__subtasksBase {
+    position: absolute;
+    width: 210px;
+    height: 15px;
+    background-color: #382A8B;
+    transform: translateX(-50%);
+    bottom: -10px;
+    left: 50%;
+    transition: border-radius ease 0.3s;
+    z-index: 2;
+  }
+
+  &__arrowContainer {
+    position: absolute;
+    left: 30px;
+    bottom: 13px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13px;
+    height: 9px;
+    z-index: 4;
+  }
+
+  &__subtaskBlock {
+    border-radius: 15px;
+    border: 1px solid $main;
+    background: $back;
+    box-shadow: 0 4px 5px 3px rgba(31, 38, 135, 0.25);
+    padding: 4px 23px 4px 17px;
+    margin-top: 11px;
+    height: 66px;
+    position: relative;
+
+    span {
+      @include p1;
+      color: $text;
+    }
+  }
+
+  &__progressBlock {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 11px;
+    bottom: 14px;
+    border-radius: 50%;
+  }
+}

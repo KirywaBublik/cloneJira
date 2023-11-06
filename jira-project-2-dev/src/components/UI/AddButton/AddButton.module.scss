@@ -1,0 +1,18 @@
+@import "src/assets/styles/Variables.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: $main 3px solid;
+  width: 65px;
+  height: 65px;
+  background-color: rgba(31, 31, 71, 0.6);
+  transition: background-color ease 0.3s;
+
+  &:hover {
+    transition: background-color ease 0.3s;
+    background-color: rgba(31, 31, 71, 1);
+  }
+}

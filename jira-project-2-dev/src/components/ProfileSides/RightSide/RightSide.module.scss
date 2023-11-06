@@ -1,0 +1,27 @@
+@import "./../../../assets/styles/Variables";
+@import "./../../../assets/styles/Mixins";
+
+.profileLabelBlock {
+  width: 650px;
+  max-height: 750px;
+  min-height: 750px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 5px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  background: rgba(190, 190, 190, 0.13);
+
+  .buttonBlockStyle {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+
+    .btnStyles {
+      color: #FFF;
+      @include h4;
+      background: none;
+      padding-bottom: 5px;
+    }
+  }
+}

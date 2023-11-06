@@ -1,0 +1,13 @@
+@import "./../../assets/styles/Variables";
+@import "./../../assets/styles/Mixins";
+
+.generalBlock{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10px 0 10px;
+    margin-bottom: -30px;
+    color: $text;
+    @include p2;
+}

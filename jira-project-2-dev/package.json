@@ -1,0 +1,32 @@
+{
+  "name": "ped_project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.2",
+    "react-router": "^6.4.5",
+    "react-router-dom": "^6.4.5",
+    "vite-plugin-svgr": "^3.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^3.0.0",
+    "eslint": "^8.29.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.11",
+    "prettier": "^2.8.1",
+    "sass": "^1.66.1",
+    "vite": "^4.0.0"
+  }
+}

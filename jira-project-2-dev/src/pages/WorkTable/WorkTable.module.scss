@@ -1,0 +1,8 @@
+@import "@assets/styles/Variables.scss";
+@import "@assets/styles/Mixins.scss";
+
+.workTable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

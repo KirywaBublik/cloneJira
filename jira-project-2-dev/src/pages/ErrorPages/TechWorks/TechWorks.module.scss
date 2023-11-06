@@ -1,0 +1,29 @@
+@import "./../../../assets/styles/Variables";
+@import "./../../../assets/styles/Mixins";
+
+.TechWorksBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .smallGear {
+    position: relative;
+    top: 25px;
+    right: 60px;
+  }
+
+  .bigGear {
+    position: relative;
+    top: 150px;
+  }
+}
+
+.textErrorBlock {
+  padding-top: 270px;
+  padding-left: 40px;
+
+  .textError {
+    @include h1;
+    color: $text;
+  }
+}

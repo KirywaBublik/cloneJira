@@ -1,0 +1,39 @@
+@import "./../../assets/styles/Variables";
+@import "./../../assets/styles/Mixins";
+
+.buttonBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.welcomeText {
+  color: $text;
+  @include h2;
+  padding: 45px 0 50px 0;
+}
+
+.confText {
+  color: #ADADAD;
+  @include p2;
+}
+
+.buttonBlock {
+  padding: 45px 0;
+}
+
+.divTest {
+  position: relative;
+}
+
+.LinkPass {
+  position: absolute;
+  top: 36px;
+  right: 125px;
+}
+
+.LinkPassTwo {
+  position: absolute;
+  top: 13px;
+  right: 125px;
+}

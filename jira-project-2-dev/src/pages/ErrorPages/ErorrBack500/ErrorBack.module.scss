@@ -1,0 +1,11 @@
+@import "./../../../assets/styles/Variables";
+@import "./../../../assets/styles/Mixins";
+
+.ErrorText {
+  @include default(18);
+  color: $text;
+}
+
+.ErrorBlock {
+  padding-bottom: 100px;
+}

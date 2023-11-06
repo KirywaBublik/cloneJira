@@ -1,0 +1,27 @@
+@import "./../../assets/styles/Variables";
+@import "./../../assets/styles/Mixins";
+
+.footer {
+  background: rgba(31, 38, 135, 0.37);
+
+  .contentFooter {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $text;
+    @include p2;
+
+    .copyText {
+      padding-top: 50px;
+      color: $text;
+      @include p2;
+    }
+
+    .layoutText {
+      color: $text;
+      @include p2;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+version: "3.5"
+services:
+  jira-project-front2:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    container_name: jira-project-front2
+    env_file: .env
+    ports:
+      - "5430:8080"

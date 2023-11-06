@@ -1,0 +1,60 @@
+@import "./../../../assets/styles/Variables";
+@import "./../../../assets/styles/Mixins";
+
+.childrenGeneralBlock{
+    user-select:none;
+    cursor: pointer;
+    .spanChildren{
+        padding-right: 10px;
+    }
+}
+.elementSelector{
+    position: absolute;
+    bottom: 78px;
+    left: -30px;
+    max-width: 259px;
+    max-height: 215px;
+    min-width: 259px;
+    min-height: 215px;
+    border-radius: 20px;
+    background: #1F1F47;
+    box-shadow: 0 0 15px 0 #1F2687;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track{
+        margin: 15px 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $text;
+        border-radius: 50px;
+
+        &:hover {
+            background-color: #ccc;
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    .inputBlockStyle{
+        cursor: pointer;
+        display: block;
+        text-align: start;
+        .text{
+            display: inline-block;
+            padding: 16px 15px 16px 0;
+        }
+        .inputLineStyle{
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.50);
+            height: 1px;
+            width: 100%;
+        }
+    }
+}
+.selected {
+    background: rgba(255, 255, 255, 0.35);
+}

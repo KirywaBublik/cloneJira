@@ -1,0 +1,9 @@
+@import "./../../../assets/styles/Variables";
+@import "./../../../assets/styles/Mixins";
+.childrenGeneralBlock{
+    user-select:none;
+    cursor: pointer;
+    .spanChildren{
+        padding-right: 10px;
+    }
+}

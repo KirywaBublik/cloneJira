@@ -1,0 +1,92 @@
+@import "@assets/styles/Mixins.scss";
+@import "@assets/styles/Variables.scss";
+
+.tasksColumn {
+  width: 275px;
+
+  &__titleBlock {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    position: relative;
+  }
+
+  &__title {
+    color: $text;
+    @include p1;
+  }
+
+  &__deleteIconContainer {
+    position: absolute;
+    bottom: 30px;
+    right: 24px;
+
+  }
+
+  &__deleteIcon {
+    opacity: 0.5;
+    transition: opacity ease-in 0.3s;
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+
+  &__tasksBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid rgba(176, 193, 206, 0.50);
+  }
+
+  &__taskContainer {
+    margin-bottom: 20px;
+  }
+
+  &__subtaskContainer {
+    margin-top: 18px;
+  }
+}
+
+.modalColumnDelete {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  border-radius: 10px 0 10px 10px;
+  border: 1px solid $main;
+  background: $back;
+  padding: 3px 15px;
+
+  span {
+    color: $text;
+    @include p2;
+  }
+
+  &__title {
+    cursor: default;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__contentBlock {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    display: flex;
+    width: 40px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      border-radius: 5px;
+      border: 2px solid #1F2687;
+      background: #1B1B4B;
+    }
+  }
+
+}

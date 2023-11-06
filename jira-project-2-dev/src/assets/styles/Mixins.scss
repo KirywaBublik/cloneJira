@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+@mixin default($fontSize) {
+  font-family: 'Poppins', sans-serif;
+  font-size: $fontSize + px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin h1 {
+  @include default(30);
+  line-height: 150%; /* 45px */
+  letter-spacing: 0.3px;
+}
+
+@mixin h2 {
+  @include default(24);
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.24px;
+}
+
+@mixin h3 {
+  @include default(20);
+  line-height: 150%; /* 30px */
+  letter-spacing: 0.2px;
+}
+
+@mixin h4 {
+  @include default(18);
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.18px;
+}
+
+@mixin h5 {
+  @include default(15);
+  line-height: 150%; /* 22.5px */
+}
+
+@mixin p1 {
+  @include default(18);
+  line-height: 155%; /* 27.9px */
+  letter-spacing: 0.18px;
+}
+
+@mixin p2 {
+  @include default(14);
+  line-height: 155%; /* 21.7px */
+  letter-spacing: 0.14px;
+}

@@ -1,0 +1,55 @@
+@import "./../../assets/styles/Variables";
+@import "./../../assets/styles/Mixins";
+
+.buttonBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 1024px;
+
+  .authBack {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $back url("./../../assets/img/Blob.svg") center no-repeat;
+    background-blend-mode: color-dodge;
+    height: 1024px;
+    padding-top: 170px;
+    padding-bottom: 30px;
+
+    .authLogo {
+      position: absolute;
+      top: -100px;
+      left: -173px;
+    }
+
+    .authBlock {
+      position: relative;
+      border-radius: 15px;
+      background: rgba(190, 190, 190, 0.13);
+      box-shadow: 0 8px 32px 5px rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(18px);
+      max-width: 565px;
+      width: 565px;
+      margin: 0 auto;
+      min-height: 820px;
+
+      .authText {
+        text-align: center;
+
+        .authLink {
+          color: $text;
+          @include h4;
+        }
+      }
+    }
+  }
+}

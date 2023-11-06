@@ -1,0 +1,13 @@
+@import "./../../../../assets/styles/Variables";
+@import "./../../../../assets/styles/Mixins";
+
+.textEffectBtnBack {
+  display: flex;
+  align-items: start;
+}
+
+.textEffect {
+  color: $text;
+  @include h2;
+  padding-top: 300px;
+}

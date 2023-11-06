@@ -1,0 +1,39 @@
+@import "./../../assets/styles/Variables";
+@import "./../../assets/styles/Mixins";
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+.errorBlock {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto 0 auto;
+  background: $back url("./../../assets/img/Blob.svg") center no-repeat;
+  background-blend-mode: color-dodge;
+
+  .logoClass {
+    margin: 0 -20px 20px -45px;
+  }
+
+  .errorContent {
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: rgba(190, 190, 190, 0.13);
+    box-shadow: 0 8px 32px 5px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(18px);
+  }
+}

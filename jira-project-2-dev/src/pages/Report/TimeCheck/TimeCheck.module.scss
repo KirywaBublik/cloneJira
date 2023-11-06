@@ -1,0 +1,45 @@
+@import "./../../../assets/styles/Variables";
+@import "./../../../assets/styles/Mixins";
+
+.timeCheckBlock {
+  padding-top: 110px;
+
+  .timeCheckContent {
+    width: 1193px;
+    height: 515px;
+    margin: 0 auto;
+    border-bottom: 4px solid $text;;
+    border-left: 4px solid $text;
+    text-align: start;
+
+    .timeCheckText {
+      padding-left: 16px;
+      padding-bottom: 16px;
+      color: $text;
+      @include h5;
+    }
+  }
+}
+
+.timeCheckContentBlock {
+  padding-top: 65px;
+}
+
+.time {
+  position: relative;
+  right: -170px;
+  @include default(64);
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  display: inline-flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.diagram {
+  height: 128px;
+  background: linear-gradient(90deg, #FFF 0%, #5C39F1 100%);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}

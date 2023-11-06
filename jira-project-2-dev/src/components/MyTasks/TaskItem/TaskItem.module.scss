@@ -1,0 +1,52 @@
+@import "src/assets/styles/Variables.scss";
+@import "src/assets/styles/Mixins.scss";
+
+.taskItem {
+  color: $text;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 9px 20px 3px;
+  border-radius: 15px;
+  border: 1px solid #838BA9;
+  background: rgba(190, 190, 190, 0.13);
+  transition: background ease 0.3s;
+
+  &_big {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 1px solid #838BA9;
+    background: rgba(190, 190, 190, 0.13);
+    box-shadow: 0 8px 32px 5px rgba(31, 38, 135, 0.25);
+    backdrop-filter: blur(18px);
+    padding: 20px;
+    // Ширина и высота скорее всего будут не фикс, просто сейчас добавил, чтобы имело форму
+    width: 1050px;
+    height: 730px;
+  }
+
+  &__title {
+    @include p1;
+
+    &_big {
+      @include h1;
+    }
+  }
+
+  &__subtitle {
+    @include p2;
+
+    &_big {
+      @include p1;
+    }
+  }
+
+  &__text {
+    @include p1;
+  }
+
+  &_active {
+    background: rgba(255, 255, 255, 0.35);
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../../assets/styles/Variables";
+@import "../../../assets/styles/Mixins";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  min-height: calc(100vh - 162px);
+  flex: 1;
+  margin-bottom: 25px;
+}

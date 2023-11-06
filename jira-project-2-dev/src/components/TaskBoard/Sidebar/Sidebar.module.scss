@@ -1,0 +1,46 @@
+@import "@assets/styles/Mixins.scss";
+@import "@assets/styles/Variables.scss";
+
+.sidebar {
+  width: 280px;
+  height: 750px;
+  border-radius: 0 25px 25px 0;
+  box-shadow: 9px 0 4px -5px rgba(60, 67, 255, 0.50);
+  z-index: 1;
+  background-color: #1B1B41;
+  padding: 30px 0;
+  position: relative;
+  &__exitIconContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: rotate(45deg);
+  }
+  &__titleBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    @include h3;
+    color: $text;
+  }
+  &__underTitleLine {
+    width: 200px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: $text;
+    opacity: 0.5;
+  }
+  &__tasksBlock {
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    height: 650px;
+  }
+  &__taskBlock:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,38 @@
+@import "./../../../assets/styles/Variables";
+@import "./../../../assets/styles/Mixins";
+
+.labelBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .labelText {
+    margin-right: auto;
+    padding: 0 0 5px 110px;
+    color: $text;
+    @include p2;
+  }
+
+  .inputText {
+    color: rgba(255, 255, 255, 0.50);
+    width: 350px;
+    height: 45px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
+    padding-left: 15px;
+    font-size: 14px;
+
+    &:focus {
+      background: rgba(0, 0, 0, 0.25);
+      color: $text;
+    }
+  }
+}
+
+.LinkPass {
+  position: absolute;
+  top: 36px;
+  right: 125px;
+}
